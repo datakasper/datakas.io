@@ -1,82 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Datakas | Reliable Data Platforms</title>
-<meta name="description" content="Boutique data engineering consultancy building reliable data platforms with modern tooling.">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Datakas | Reliable Data Platforms</title>
+  <meta name="description" content="Datakas is a boutique data engineering consultancy building reliable, scalable and maintainable data platforms with modern tooling." />
+
+  <meta property="og:title" content="Datakas | Reliable Data Platforms" />
+  <meta property="og:description" content="Reliable data platforms built with state-of-the-art tooling." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://datakas.io" />
+  <meta property="og:image" content="https://datakas.io/assets/logo.png" />
+
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-<nav>
-<div class="brand">Datakas</div>
-<div class="links">
-<a href="#capabilities">Capabilities</a>
-<a href="#tools">Tools</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-</div>
-</nav>
 
-<section class="hero">
-
-  <video class="hero-video" autoplay muted loop playsinline>
-    <source src="assets/304019_medium.mp4" type="video/mp4">
-  </video>
-
-  <div class="hero-overlay"></div>
-
-  <div class="hero-content">
-    <img src="assets/logo.png" class="logo" alt="Datakas">
-
-    <h1>Reliable Data Platforms</h1>
-
-    <h2>Built with state-of-the-art tooling</h2>
-
-    <p>
-      We build reliable, scalable data platforms that help organizations
-      turn data into trusted business assets.
-    </p>
-
-    <a class="cta" href="mailto:contact@datakas.io">
-      contact@datakas.io
+<body id="top">
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Datakas home">
+      <img src="assets/logo.png" alt="" />
+      <span>Datakas</span>
     </a>
-  </div>
 
-</section>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#capabilities">Capabilities</a>
+      <a href="#tools">Tools</a>
+      <a href="#principles">Principles</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<section id="capabilities">
-<h3>Capabilities</h3>
-<div class="grid">
-<div><h4>Data Engineering</h4><p>Reliable pipelines and processing at scale.</p></div>
-<div><h4>Analytics Engineering</h4><p>Modern data modeling and transformation workflows.</p></div>
-<div><h4>Cloud Architecture</h4><p>AWS-first platforms built for growth.</p></div>
-<div><h4>Modernization</h4><p>Move from legacy systems to modern data platforms.</p></div>
-</div>
-</section>
+  <main>
+    <section class="hero" aria-label="Datakas introduction">
+      <video class="hero-video" autoplay muted loop playsinline poster="assets/logo.png">
+        <source src="assets/304019_medium.mp4" type="video/mp4" />
+      </video>
 
-<section id="tools">
-<h3>Frameworks & Tools We Love</h3>
-<div class="toolgrid">
-<span>AWS</span><span>Databricks</span><span>dbt</span><span>Airflow</span>
-<span>Snowflake</span><span>Spark</span><span>Python</span><span>SQL</span>
-<span>GitHub</span><span>Power BI</span><span>Tableau</span>
-</div>
-</section>
+      <div class="hero-shade"></div>
+      <div class="hero-glow hero-glow-left"></div>
+      <div class="hero-glow hero-glow-right"></div>
 
-<section id="about" class="about">
-<img src="assets/kasper.jpg" alt="Kasper">
-<div>
-<h3>Kasper Birkelund</h3>
-<h4>Founder & Data Engineer</h4>
-<p>Datakas is a boutique data engineering consultancy focused on building reliable, scalable and maintainable data platforms using modern cloud-native tooling.</p>
-</div>
-</section>
+      <div class="hero-content">
+        <img class="hero-logo" src="assets/logo.png" alt="Datakas logo" />
 
-<section id="contact">
-<h3>Contact</h3>
-<p>Need help building or modernizing your data platform?</p>
-<a class="cta" href="mailto:contact@datakas.io">contact@datakas.io</a>
-</section>
+        <p class="eyebrow">Boutique data engineering consultancy</p>
+
+        <h1>Reliable Data Platforms</h1>
+
+        <p class="hero-subtitle">Built with state-of-the-art tooling</p>
+
+        <p class="hero-copy">
+          We build reliable, scalable data platforms that help organizations turn data into trusted business assets.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="mailto:contact@datakas.io">contact@datakas.io</a>
+          <a class="button button-secondary" href="#capabilities">Explore capabilities</a>
+        </div>
+      </div>
+
+      <div class="scroll-indicator" aria-hidden="true">
+        <span></span>
+      </div>
+    </section>
+
+    <section id="capabilities" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Capabilities</p>
+        <h2>Data platforms designed for real-world operations.</h2>
+        <p>
+          Datakas helps teams build modern foundations for data movement, transformation, orchestration and analytics.
+        </p>
+      </div>
+
+      <div class="card-grid">
+        <article class="card">
+          <span class="card-number">01</span>
+          <h3>Data Engineering</h3>
+          <p>Reliable pipelines for ingesting, processing and serving data across cloud and analytical systems.</p>
+        </article>
+
+        <article class="card">
+          <span class="card-number">02</span>
+          <h3>Analytics Engineering</h3>
+          <p>Version-controlled data models, clear business logic and maintainable transformation workflows.</p>
+        </article>
+
+        <article class="card">
+          <span class="card-number">03</span>
+          <h3>Cloud Architecture</h3>
+          <p>AWS-first platform patterns built for security, scalability, cost control and long-term maintainability.</p>
+        </article>
+
+        <article class="card">
+          <span class="card-number">04</span>
+          <h3>Modernization</h3>
+          <p>Move from fragile legacy jobs to observable, cloud-native pipelines and modern data platform practices.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="tools" class="section section-muted">
+      <div class="section-heading">
+        <p class="eyebrow">Frameworks & tools we love</p>
+        <h2>Modern tooling, used where it fits.</h2>
+        <p>
+          We prefer proven technologies that support automation, reproducibility, open interfaces and scalable operation.
+        </p>
+      </div>
+
+      <div class="tool-grid">
+        <article class="tool-card">
+          <img src="https://cdn.simpleicons.org/amazonwebservices/FFFFFF" alt="AWS logo" />
+          <span>AWS</span>
+        </article>
+        <article class="tool-card">
+          <img src="https://cdn.simpleicons.org/databricks/FFFFFF" alt="Databricks logo" />
+          <span>Databricks</span>
+        </article>
+        <article class="tool-card">
+          <img src="https://cdn.simpleicons.org/dbt/FFFFFF" alt="dbt logo" />
+          <span>dbt</span>
+        </article>
+        <article class="tool-card">
+          <img src="https://cdn.simpleicons.org/apacheairflow/FFFFFF" alt="Apache Airflow logo" />
+          <span>Airflow</span>
+        </article>
+        <article class="tool-card">
+          <img src="https://cdn.simpleicons.org/snowflake/FFFFFF" alt="Snowflake logo" />
+          <span>Snowflake</span>
+        </article>
+        <article class="tool-card">
+          <img src="https://cdn.simpleicons.org/apachespark/FFFFFF" alt="Apache Spark logo" />
+          <span>Spark</span>
+        </article>
+        <article class="tool-card">
+          <img src="https://cdn.simpleicons.org/python/FFFFFF" alt="Python logo" />
+          <span>Python</span>
+        </article>
+        <article class="tool-card">
+          <img src="https://cdn.simpleicons.org/postgresql/FFFFFF" alt="SQL logo" />
+          <span>SQL</span>
+        </article>
+        <article class="tool-card">
+          <img src="https://cdn.simpleicons.org/github/FFFFFF" alt="GitHub logo" />
+          <span>GitHub</span>
+        </article>
+        <article class="tool-card">
+          <img src="https://cdn.simpleicons.org/powerbi/FFFFFF" alt="Power BI logo" />
+          <span>Power BI</span>
+        </article>
+        <article class="tool-card">
+          <img src="https://cdn.simpleicons.org/tableau/FFFFFF" alt="Tableau logo" />
+          <span>Tableau</span>
+        </article>
+        <article class="tool-card">
+          <img src="https://cdn.simpleicons.org/docker/FFFFFF" alt="Docker logo" />
+          <span>Docker</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="principles" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Principles</p>
+        <h2>Engineering discipline over fragile shortcuts.</h2>
+      </div>
+
+      <div class="principle-list">
+        <article>
+          <h3>Open interfaces</h3>
+          <p>Build platforms that remain flexible as business needs and tooling evolve.</p>
+        </article>
+        <article>
+          <h3>Infrastructure as code</h3>
+          <p>Keep environments reproducible, reviewable and easier to operate.</p>
+        </article>
+        <article>
+          <h3>Observability first</h3>
+          <p>Know when pipelines fail before users and decision-makers are affected.</p>
+        </article>
+        <article>
+          <h3>Scalable by design</h3>
+          <p>Architecture that can grow with data volume, complexity and team maturity.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="about-image-wrap">
+        <img src="assets/kasper.jpg" alt="Kasper Birkelund" />
+      </div>
+
+      <div class="about-copy">
+        <p class="eyebrow">About Datakas</p>
+        <h2>Boutique consultancy. Direct founder involvement.</h2>
+        <p>
+          Datakas is a boutique data engineering consultancy focused on building reliable, scalable and maintainable data platforms.
+        </p>
+        <p>
+          When you work with Datakas, you work directly with Kasper Birkelund, founder and data engineer, across platform design, cloud infrastructure, orchestration, transformations and analytics delivery.
+        </p>
+        <div class="founder-line">
+          <strong>Kasper Birkelund</strong>
+          <span>Founder & Data Engineer</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <p class="eyebrow">Contact</p>
+      <h2>Need help building or modernizing your data platform?</h2>
+      <a class="contact-link" href="mailto:contact@datakas.io">contact@datakas.io</a>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> Datakas</span>
+    <a href="#top">Back to top</a>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
