@@ -127,9 +127,9 @@ p {
 
 h1 {
     margin: 0 auto 16px;
-    font-size: clamp(3.1rem, 9vw, 7.6rem);
-    line-height: .88;
-    letter-spacing: -.095em;
+    font-size: clamp(2.6rem, 7vw, 5.8rem);
+    line-height: .92;
+    letter-spacing: -.075em;
     font-weight: 850
 }
 
@@ -193,7 +193,7 @@ h1 {
 .section-title h2,
 .about h2,
 .contact h2 {
-    font-size: clamp(2.2rem, 5vw, 4.25rem);
+    font-size: clamp(2rem, 4vw, 3.4rem);
     line-height: .98;
     letter-spacing: -.075em;
     margin-bottom: 18px
