@@ -43,7 +43,7 @@ a {
     align-items: center;
     gap: 10px;
     font-weight: 800;
-    letter-spacing: -.04em
+    letter-spacing: -.04em;
     color:#b8c2d2;
     transition:color .2s ease;
 }
